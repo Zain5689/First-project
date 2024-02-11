@@ -105,6 +105,8 @@ header .header-logo .social-icons {
 header .header-logo .social-icons .header-links {
   flex-direction: row-reverse;
   margin-right: 1.625rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 @media (max-width: 767px) {
@@ -185,19 +187,68 @@ header .header-logo .social-icons li a i {
   box-shadow: 0px 2px 8px 0px var(--main-color);
 }
 
-.navbar .nav-links {
-}
-
-header .navbar .nav-links {
-}
-
-header .navbar {
-}
-
-header .navbar {
-}
-
-header .navbar {
-}
-
 /* end header */
+
+/* animated-advertising-space */
+
+.main-area {
+  margin-top: 10px;
+}
+
+.main-area .animated-advertising-space {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main-area .animated-advertising-space img {
+  max-width: 100%;
+}
+
+.main-area .animated-advertising-space .advertisement {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+@media (min-width: 767px) {
+  .main-area .animated-advertising-space .advertisement {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+}
+
+.main-area .animated-advertising-space .advertisement .first-advertisement,
+.main-area .animated-advertising-space .advertisement .second-advertisement {
+  background-color: #f2eeee;
+  text-align: center;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.main-area .animated-advertising-space .advertisement .first-advertisement {
+}
+
+.main-area .animated-advertising-space .advertisement .second-advertisement {
+}
+
+.main-area .animated-advertising-space .advertisement {
+}
+
+.main-area .animated-advertising-space {
+}
+
+.main-area {
+}
+
+.main-area {
+}
+
+.main-area {
+}
+
+.main-area {
+}
