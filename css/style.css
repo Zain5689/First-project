@@ -139,7 +139,7 @@ header .navbar {
   padding: 0.25rem;
 } */
 
-header .navbar .nav-links {
+navbar .nav-links {
   justify-content: space-evenly;
 }
 
@@ -165,7 +165,7 @@ header .navbar .nav-links li a.main-link {
   box-shadow: 0px 2px 8px 0px var(--main-color);
 }
 
-header .navbar .nav-links {
+.navbar .nav-links {
 }
 
 header .navbar .nav-links {
