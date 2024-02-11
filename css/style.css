@@ -18,7 +18,6 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
-  /* background-color: var(--secondery-color); */
   height: 100vh;
 }
 
@@ -65,12 +64,7 @@ ul {
   background-color: var(--white-color);
 }
 
-/* start header */
-
-header .container {
-}
-
-header .header-bar {
+.header-bar {
   background-color: var(--main-color);
   height: 0.625rem;
   width: 100%;
@@ -78,13 +72,13 @@ header .header-bar {
   left: 0;
 }
 
-.header-logo {
+/* start header */
+
+header .header-logo {
   justify-content: space-between;
-
   background-color: var(--white-color);
-}
-
-.header-logo .logo {
+  margin-top: 10px;
+  padding: 0px 0px 10px;
 }
 
 .header-logo .logo h1 {
@@ -93,14 +87,45 @@ header .header-bar {
 }
 
 .header-logo .logo p {
+  margin-top: 10px;
+  font-size: 12px;
+  margin-right: 28px;
 }
 
-.header-logo .social-icons {
+@media (max-width: 767px) {
+  header .header-logo .social-icons p {
+    display: none;
+  }
+}
+
+header .header-logo .social-icons {
+  background-color: white;
 }
 
 header .header-logo .social-icons .header-links {
   flex-direction: row-reverse;
   margin-right: 1.625rem;
+}
+
+@media (max-width: 767px) {
+  header .header-logo .social-icons .header-links {
+    display: none;
+  }
+}
+
+.toggle-menu {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  header .header-logo .toggle-menu {
+    display: none;
+  }
+}
+
+.show-menu {
+  display: flex;
 }
 
 header .header-logo .social-icons li a {
@@ -123,41 +148,36 @@ header .header-logo .social-icons li a i {
   color: var(--white-color);
 }
 
-.header-logo .social-icons li a {
-}
-
-.header-logo .social-icons p {
-}
-
-header .navbar {
+.navbar {
   background-color: var(--secondery-color);
   width: 100%;
   padding: 0.25rem;
 }
 
-/* header .navbar {
-  padding: 0.25rem;
-} */
+/* start navbar */
 
-navbar .nav-links {
-  justify-content: space-evenly;
+@media (max-width: 767px) {
+  .navbar {
+    display: none;
+  }
 }
 
-header .navbar .nav-links li a {
+.navbar .nav-links {
+  justify-content: space-between;
+}
+
+.navbar .nav-links li a {
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--black-color);
 }
 
-header .navbar .nav-links li:first-child a {
-}
-
-header .navbar .nav-links li:last-child a {
+.navbar .nav-links li:last-child a {
   margin-left: 0rem;
 }
 
-header .navbar .nav-links li a.main-link {
+.navbar .nav-links li a.main-link {
   color: var(--main-color);
   background-color: var(--white-color);
   padding: 3px 14px 7px;
