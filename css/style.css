@@ -71,13 +71,7 @@ ul {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 767px) {
-  .head {
-    width: 90%;
-    margin-right: 5%;
-    height: 3rem;
-  }
-}
+
 .head::before {
   content: "";
   background-color: var(--main-color);
@@ -87,17 +81,7 @@ ul {
   top: 14px;
   right: 0;
 }
-@media (max-width: 767px) {
-  .head::before {
-    content: "";
-    background-color: var(--main-color);
-    height: 2em;
-    width: 5px;
-    position: absolute;
-    top: 10px;
-    right: 0;
-  }
-}
+
 .special {
   display: flex;
   justify-content: center;
@@ -497,5 +481,3 @@ header .header-logo .social-icons li a i {
   font-size: 40px;
   font-weight: bold;
 }
-=======
->>>>>>> c60fc15fba18ec66438d2fce0334fd6802faf3ed
