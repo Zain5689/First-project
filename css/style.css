@@ -637,12 +637,16 @@ header .header-logo .social-icons li a i {
 }
 
 .section-4 .box .text p {
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 10px;
 }
 
 .section-4 .box .text .bottom p {
-  padding: 8px 12px;
+  padding: 8px 8px;
+}
+
+.section-4 .box .text .bottom  {
+  justify-content: flex-start;
 }
 
 .section-4 .part-two .advertisement {
